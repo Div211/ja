@@ -363,6 +363,82 @@ public class a2zdsa {
 //     }
 //     System.out.println(max);
 // }
+//Find the number that appears once and the others twice.
+//  public static void main(String args[]){
+//     int arr[]= {1,1,2,3,3,4,4,6,6};
+//     find(arr);
+//     System.out.println(Arrays.toString(arr));
+//     System.out.println(find(arr));
+// }
+// public static int find(int arr[]){
+//     int xor =0;
+//     for(int i=0; i<arr.length; i++){
+//         xor = xor ^ arr[i];
+//     }
+//     return xor;
+// }
+
+
+//Find the longest subarray with sum k
+// public static void main(String args[]){
+//     int arr[] = {1,2,3,1,1,0,1,1,3,3};
+//     lon(arr);
+// }
+// public static void lon(int arr[]){
+//     int k =6;
+//     int i =0;
+//     int j=0;
+//     int maxlength =0;
+//     int sum = 0;
+//     int length = 0;
+//     boolean y = true;
+//     while(j<arr.length){
+//         if(y == true){
+//             sum = sum+arr[j];
+//         }
+//         if(sum<=3){
+//             y = true;
+//              j++;
+//             if(sum == 3){
+//                  length = j-i;
+//                 if(length>maxlength){                
+//                     maxlength = length;
+//                 }
+//             }
+//         }else{
+//             y = false;
+//             sum = sum-arr[i];
+//             i++;
+//          }
+//     }
+//     System.out.println(length);
+//     System.out.println(maxlength);
+// }
+
+
+// Two sum check if the pair exists or not
+// by using hashing
+// public static void main(String args[]){
+//     int target = 14;
+//     int arr[] = {2,6,5,8,11};
+//     String ans = twoSum(arr,target);
+//     System.out.println(ans);
+// }
+// public static String twoSum(int arr[], int target){
+//     HashMap<Integer, Integer> hm = new HashMap<>();
+//     for(int i=0; i<arr.length; i++){
+//         int num = arr[i];
+//         int sum = target - num;
+//         if(hm.containsKey(sum)){
+//             System.out.println(arr[i]+"+"+sum+"="+ target);
+//             return "Yes";
+//         }
+//         hm.put(arr[i], i);
+//     }
+//     return "No";
+// }
+
+
 
     }
 
